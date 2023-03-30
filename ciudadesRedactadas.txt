@@ -1,0 +1,184 @@
+La ciudad San Francisco está en las coordenadas (235, 315) sus ciudades colidantes son: 
+· Chicago, que está a una distancia de 82
+· Manila, que está a una distancia de 784
+· Tokio, que está a una distancia de 993
+La ciudad Chicago está en las coordenadas (300, 280) sus ciudades colidantes son: 
+· Montreal, que está a una distancia de 73
+· Atlanta, que está a una distancia de 20
+La ciudad Atlanta está en las coordenadas (320, 320) sus ciudades colidantes son: 
+· Chicago, que está a una distancia de 20
+· Miami, que está a una distancia de 20
+· Washington, que está a una distancia de 30
+La ciudad Montreal está en las coordenadas (350, 280) sus ciudades colidantes son: 
+· Chicago, que está a una distancia de 73
+· Washington, que está a una distancia de 76
+La ciudad Nueva York está en las coordenadas (380, 290) sus ciudades colidantes son: 
+· Montreal, que está a una distancia de 114
+· Washington, que está a una distancia de 95
+· Londres, que está a una distancia de 479
+· Madrid, que está a una distancia de 407
+La ciudad Washington está en las coordenadas (360, 330) sus ciudades colidantes son: 
+· Montreal, que está a una distancia de 76
+· Atlanta, que está a una distancia de 30
+· Miami, que está a una distancia de 36
+La ciudad Londres está en las coordenadas (700, 230) sus ciudades colidantes son: 
+· Madrid, que está a una distancia de 615
+· Paris, que está a una distancia de 670
+· Essen, que está a una distancia de 735
+La ciudad Madrid está en las coordenadas (687, 290) sus ciudades colidantes son: 
+· Londres, que está a una distancia de 615
+· Paris, que está a una distancia de 621
+· Argel, que está a una distancia de 564
+La ciudad Paris está en las coordenadas (727, 250) sus ciudades colidantes son: 
+· Madrid, que está a una distancia de 621
+· Londres, que está a una distancia de 670
+· Essen, que está a una distancia de 739
+· Argel, que está a una distancia de 623
+· Milan, que está a una distancia de 706
+La ciudad Essen está en las coordenadas (755, 190) sus ciudades colidantes son: 
+· Londres, que está a una distancia de 735
+· Paris, que está a una distancia de 739
+· Milan, que está a una distancia de 768
+La ciudad Milan está en las coordenadas (755, 235) sus ciudades colidantes son: 
+· Essen, que está a una distancia de 768
+· Paris, que está a una distancia de 706
+· Estambul, que está a una distancia de 747
+La ciudad San Petersburgo está en las coordenadas (815, 210) sus ciudades colidantes son: 
+· Essen, que está a una distancia de 828
+· Estambul, que está a una distancia de 808
+· Moscu, que está a una distancia de 895
+La ciudad Los Angeles está en las coordenadas (275, 355) sus ciudades colidantes son: 
+· Chicago, que está a una distancia de 82
+· Sidney, que está a una distancia de 680
+La ciudad Miami está en las coordenadas (380, 360) sus ciudades colidantes son: 
+· Washington, que está a una distancia de 36
+· Atlanta, que está a una distancia de 20
+· Bogota, que está a una distancia de 63
+La ciudad Mexico DF está en las coordenadas (300, 385) sus ciudades colidantes son: 
+· Miami, que está a una distancia de 87
+· Chicago, que está a una distancia de 87
+· Bogota, que está a una distancia de 104
+· Lima, que está a una distancia de 151
+La ciudad Bogota está en las coordenadas (400, 460) sus ciudades colidantes son: 
+· Miami, que está a una distancia de 63
+· Lima, que está a una distancia de 139
+La ciudad Lima está en las coordenadas (395, 520) sus ciudades colidantes son: 
+· Bogota, que está a una distancia de 139
+La ciudad Santiago de Chile está en las coordenadas (430, 620) sus ciudades colidantes son: 
+· Lima, que está a una distancia de 227
+La ciudad Buenos Aires está en las coordenadas (453, 670) sus ciudades colidantes son: 
+· Bogota, que está a una distancia de 225
+La ciudad Sao Paulo está en las coordenadas (520, 570) sus ciudades colidantes son: 
+· Bogota, que está a una distancia de 78
+· Lagos, que está a una distancia de 265
+· Madrid, que está a una distancia de 400
+La ciudad Lagos está en las coordenadas (710, 450) sus ciudades colidantes son: 
+· Kinsasa, que está a una distancia de 347
+· Jartum, que está a una distancia de 448
+La ciudad Kinsasa está en las coordenadas (770, 540) sus ciudades colidantes son: 
+· Lagos, que está a una distancia de 347
+· Jartum, que está a una distancia de 431
+· Johannesburgo, que está a una distancia de 295
+La ciudad Jartum está en las coordenadas (815, 450) sus ciudades colidantes son: 
+· Lagos, que está a una distancia de 448
+· Kinsasa, que está a una distancia de 431
+· Johannesburgo, que está a una distancia de 409
+La ciudad Johannesburgo está en las coordenadas (815, 630) sus ciudades colidantes son: 
+· Kinsasa, que está a una distancia de 295
+· Jartum, que está a una distancia de 409
+La ciudad Argel está en las coordenadas (730, 330) sus ciudades colidantes son: 
+· Madrid, que está a una distancia de 564
+· Paris, que está a una distancia de 623
+· Estambul, que está a una distancia de 669
+La ciudad El Cairo está en las coordenadas (820, 350) sus ciudades colidantes son: 
+· Argel, que está a una distancia de 617
+· Estambul, que está a una distancia de 713
+· Bagdad, que está a una distancia de 731
+La ciudad Riad está en las coordenadas (895, 385) sus ciudades colidantes son: 
+· Bagdad, que está a una distancia de 757
+· Karachi, que está a una distancia de 807
+La ciudad Estambul está en las coordenadas (830, 294) sus ciudades colidantes son: 
+· Argel, que está a una distancia de 669
+· Bagdad, que está a una distancia de 775
+· Moscu, que está a una distancia de 850
+La ciudad Bagdad está en las coordenadas (880, 320) sus ciudades colidantes son: 
+· Estambul, que está a una distancia de 775
+· Karachi, que está a una distancia de 839
+· Riad, que está a una distancia de 757
+La ciudad Moscu está en las coordenadas (890, 230) sus ciudades colidantes son: 
+· Teheran, que está a una distancia de 899
+· Estambul, que está a una distancia de 850
+La ciudad Teheran está en las coordenadas (920, 310) sus ciudades colidantes son: 
+· Moscu, que está a una distancia de 899
+· Bagdad, que está a una distancia de 828
+· Karachi, que está a una distancia de 873
+La ciudad Karachi está en las coordenadas (980, 355) sus ciudades colidantes son: 
+· Teheran, que está a una distancia de 873
+· Bagdad, que está a una distancia de 839
+· Riad, que está a una distancia de 807
+· Bombay, que está a una distancia de 873
+La ciudad Bombay está en las coordenadas (1005, 395) sus ciudades colidantes son: 
+· Karachi, que está a una distancia de 873
+· Madras, que está a una distancia de 873
+La ciudad Nueva Delhi está en las coordenadas (1025, 330) sus ciudades colidantes son: 
+· Teheran, que está a una distancia de 925
+· Karachi, que está a una distancia de 935
+· Bombay, que está a una distancia de 925
+· Madras, que está a una distancia de 935
+· Calcuta, que está a una distancia de 986
+La ciudad Calcuta está en las coordenadas (1070, 370) sus ciudades colidantes son: 
+· Madras, que está a una distancia de 938
+· Bangkok, que está a una distancia de 993
+La ciudad Madras está en las coordenadas (1035, 410) sus ciudades colidantes son: 
+· Bombay, que está a una distancia de 873
+· Calcuta, que está a una distancia de 938
+· Bangkok, que está a una distancia de 942
+· Yakarta, que está a una distancia de 884
+La ciudad Bombay está en las coordenadas (1005, 395) sus ciudades colidantes son: 
+· Karachi, que está a una distancia de 873
+· Madras, que está a una distancia de 873
+La ciudad Yakarta está en las coordenadas (1150, 525) sus ciudades colidantes son: 
+· Madras, que está a una distancia de 884
+· Bangkok, que está a una distancia de 942
+· Sidney, que está a una distancia de 920
+La ciudad Bangkok está en las coordenadas (1120, 415) sus ciudades colidantes son: 
+· Yakarta, que está a una distancia de 942
+· Calcuta, que está a una distancia de 993
+· Madras, que está a una distancia de 942
+La ciudad Hong Kong está en las coordenadas (1165, 370) sus ciudades colidantes son: 
+· Bangkok, que está a una distancia de 1063
+· Taipei, que está a una distancia de 1149
+· Manila, que está a una distancia de 1114
+· Shanghai, que está a una distancia de 1157
+La ciudad Shanghai está en las coordenadas (1195, 355) sus ciudades colidantes son: 
+· Pekin, que está a una distancia de 1213
+· Seul, que está a una distancia de 1252
+· Tokio, que está a una distancia de 1298
+· Taipei, que está a una distancia de 1181
+La ciudad Pekin está en las coordenadas (1175, 300) sus ciudades colidantes son: 
+· Seul, que está a una distancia de 1275
+· Shanghai, que está a una distancia de 1213
+La ciudad Seul está en las coordenadas (1225, 297) sus ciudades colidantes son: 
+· Pekin, que está a una distancia de 1275
+· Tokio, que está a una distancia de 1357
+La ciudad Tokio está en las coordenadas (1280, 290) sus ciudades colidantes son: 
+· Seul, que está a una distancia de 1357
+· Osaka, que está a una distancia de 1362
+· Shanghai, que está a una distancia de 1298
+La ciudad Osaka está en las coordenadas (1255, 320) sus ciudades colidantes son: 
+· Tokio, que está a una distancia de 1362
+· Taipei, que está a una distancia de 1250
+La ciudad Taipei está en las coordenadas (1205, 375) sus ciudades colidantes son: 
+· Osaka, que está a una distancia de 1250
+· Shanghai, que está a una distancia de 1181
+· Manila, que está a una distancia de 1139
+La ciudad Ho Chi Minh está en las coordenadas (1148, 429) sus ciudades colidantes son: 
+· Yakarta, que está a una distancia de 953
+· Bangkok, que está a una distancia de 1007
+· Manila, que está a una distancia de 1061
+La ciudad Manila está en las coordenadas (1200, 420) sus ciudades colidantes son: 
+· Taipei, que está a una distancia de 1139
+· Sidney, que está a una distancia de 1032
+La ciudad Sidney está en las coordenadas (1320, 645) sus ciudades colidantes son: 
+· Manila, que está a una distancia de 1032
+· Yakarta, que está a una distancia de 920
