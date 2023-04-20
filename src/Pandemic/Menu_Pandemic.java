@@ -8,11 +8,29 @@ import java.io.File;
 import java.io.IOException;
 import java.awt.image.BufferedImage;
 
-
+//ImageIcon ruta imagen + JLabel de detención de la imagen
 public class Menu_Pandemic extends JFrame {
     
     public Menu_Pandemic() {
         super("Menú Pandemic");
+        
+        // Crear un objeto ImageIcon con la imagen de fondo
+        ImageIcon imagenFondo = new ImageIcon("imagen.pneg");
+
+        // Crear un JLabel con el ImageIcon
+        JLabel fondo = new JLabel(imagenFondo);
+
+        // Obtener el JPanel principal
+        JPanel panel1 = (JPanel) getContentPane();
+
+        // Establecer el layout del panel
+        panel1.setLayout(new BorderLayout());
+
+        // Establecer el JLabel como el componente de fondo del panel
+        panel1.add(fondo, BorderLayout.CENTER);
+
+        // Establecer la opacidad del panel en falso para que se muestre el JLabel de fondo
+        panel1.setOpaque(false);
         
         // Componentes del menú
         JButton nuevaPartida = new JButton("Nueva partida");

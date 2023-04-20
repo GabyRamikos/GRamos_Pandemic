@@ -81,8 +81,8 @@ public class ParametrosTotal {
 					.setTextContent(Integer.toString(nuevoNumBrotesDerrota));
 
 			// Escribe los cambios en el archivo parametros.xml
-			TransformerFactory transformerFactory = TransformerFactory.newInstance();
-			Transformer transformer = transformerFactory.newTransformer(); // Crea una nueva instancia de TransformerFactory
+			TransformerFactory transformerFactory = TransformerFactory.newInstance(); // Crea una nueva instancia de TransformerFactory
+			Transformer transformer = transformerFactory.newTransformer(); 
 			DOMSource source = new DOMSource(doc); // Crea una nueva instancia de DOMSource con el documento XML
 			StreamResult result = new StreamResult(new FileWriter("parametros.xml")); // Sobreescribe el resultado del contenido modificado dentro del fichero xml
 			transformer.transform(source, result); // Transforma el documento XML y lo escribe en el archivo de salida
