@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?><parametros>
-    <numCiudadesInfectadasInicio>4</numCiudadesInfectadasInicio>
-    <numCuidadesInfectadasRonda>6</numCuidadesInfectadasRonda>
-    <numEnfermedadesActivasDerrota>2</numEnfermedadesActivasDerrota>
-    <numBrotesDerrota>9</numBrotesDerrota>
+    <numCiudadesInfectadasInicio>1</numCiudadesInfectadasInicio>
+    <numCuidadesInfectadasRonda>2</numCuidadesInfectadasRonda>
+    <numEnfermedadesActivasDerrota>3</numEnfermedadesActivasDerrota>
+    <numBrotesDerrota>4</numBrotesDerrota>
 </parametros>
