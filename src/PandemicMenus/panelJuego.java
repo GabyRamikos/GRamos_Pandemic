@@ -1,7 +1,7 @@
 package PandemicMenus;
 
+import java.awt.Color;
 import java.awt.Dimension;
-import java.awt.GridLayout;
 import java.awt.Toolkit;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -30,22 +30,73 @@ public class panelJuego extends JPanel implements ActionListener {
 
 	private int contador;
 	private JProgressBar barraRoja, barraNegra, barraAmarilla, barraAzul;
-	
-	// Botones del panel al presionar una ciudad
-	JPanel opcionesPanel;
 
-    JButton moverseButton;
-    JButton construirButton;
-    JButton tratarButton;
-    JButton pasarTurnoButton;
-	//----------------------------------------------
 	panelJuego() {
 
-//		Enfermedad enfermedadRoja = new Enfermedad();
-//		Enfermedad enfermedadAzul = new Enfermedad();
-//		Enfermedad enfermedadAmarilla = new Enfermedad();
-//		Enfermedad enfermedadNegra = new Enfermedad();
-//		
+		JProgressBar barraVacunasInfeccion0 = new JProgressBar();
+		barraVacunasInfeccion0.setStringPainted(true);
+		barraVacunasInfeccion0.setBounds(10, 10, 150, 25);
+		barraVacunasInfeccion0.setForeground(Color.BLUE);
+		barraVacunasInfeccion0.setName("Alfa");
+		add(barraVacunasInfeccion0);
+		JButton botonInvestigar0 = new JButton("Investigar");
+		botonInvestigar0.setBounds(10, 40, 150, 25);
+		add(botonInvestigar0);
+		botonInvestigar0.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				int valorActual = barraVacunasInfeccion0.getValue();
+				barraVacunasInfeccion0.setValue(valorActual + 25);
+			}
+		});
+		
+		JProgressBar barraVacunasInfeccion1 = new JProgressBar();
+		barraVacunasInfeccion1.setStringPainted(true);
+		barraVacunasInfeccion1.setBounds(170, 10, 150, 25);
+		barraVacunasInfeccion1.setForeground(Color.RED);
+		barraVacunasInfeccion1.setName("Beta");
+		add(barraVacunasInfeccion1);
+		JButton botonInvestigar1 = new JButton("Investigar");
+		botonInvestigar1.setBounds(170, 40, 150, 25);
+		add(botonInvestigar1);
+		botonInvestigar1.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				int valorActual = barraVacunasInfeccion1.getValue();
+				barraVacunasInfeccion1.setValue(valorActual + 25);
+			}
+		});
+
+		JProgressBar barraVacunasInfeccion2 = new JProgressBar();
+		barraVacunasInfeccion2.setStringPainted(true);
+		barraVacunasInfeccion2.setBounds(330, 10, 150, 25);
+		barraVacunasInfeccion2.setForeground(Color.BLACK);
+		barraVacunasInfeccion2.setName("Gamma");
+		add(barraVacunasInfeccion2);
+		JButton botonInvestigar2 = new JButton("Investigar");
+		botonInvestigar2.setBounds(330, 40, 150, 25);
+		add(botonInvestigar2);
+		botonInvestigar2.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				int valorActual = barraVacunasInfeccion2.getValue();
+				barraVacunasInfeccion2.setValue(valorActual + 25);
+			}
+		});
+
+		JProgressBar barraVacunasInfeccion3 = new JProgressBar();
+		barraVacunasInfeccion3.setStringPainted(true);
+		barraVacunasInfeccion3.setBounds(490, 10, 150, 25);
+		barraVacunasInfeccion3.setForeground(Color.YELLOW);
+		barraVacunasInfeccion3.setName("Pinocho");
+		add(barraVacunasInfeccion3);
+		JButton botonInvestigar3 = new JButton("Investigar");
+		botonInvestigar3.setBounds(490, 40, 150, 25);
+		add(botonInvestigar3);
+		botonInvestigar3.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				int valorActual = barraVacunasInfeccion3.getValue();
+				barraVacunasInfeccion3.setValue(valorActual + 25);
+			}
+		});
+		
 		screenSize = Toolkit.getDefaultToolkit().getScreenSize();
 		setSize(screenSize.width, screenSize.height);
 
@@ -355,7 +406,7 @@ public class panelJuego extends JPanel implements ActionListener {
 		Madras.addActionListener(this);
 
 		Yakarta = new JButton(imagenCiudadRojo);
-		Yakarta.setBounds(1150,525, 30, 30);
+		Yakarta.setBounds(1150, 525, 30, 30);
 		add(Yakarta);
 		Yakarta.setOpaque(false);
 		Yakarta.setContentAreaFilled(false);
@@ -363,7 +414,7 @@ public class panelJuego extends JPanel implements ActionListener {
 		Yakarta.addActionListener(this);
 
 		Bangkok = new JButton(imagenCiudadRojo);
-		Bangkok.setBounds(1120,415, 30, 30);
+		Bangkok.setBounds(1120, 415, 30, 30);
 		add(Bangkok);
 		Bangkok.setOpaque(false);
 		Bangkok.setContentAreaFilled(false);
@@ -371,7 +422,7 @@ public class panelJuego extends JPanel implements ActionListener {
 		Bangkok.addActionListener(this);
 
 		HongKong = new JButton(imagenCiudadRojo);
-		HongKong.setBounds(1165,370,30,30);
+		HongKong.setBounds(1165, 370, 30, 30);
 		add(HongKong);
 		HongKong.setOpaque(false);
 		HongKong.setContentAreaFilled(false);
@@ -379,7 +430,7 @@ public class panelJuego extends JPanel implements ActionListener {
 		HongKong.addActionListener(this);
 
 		Shanghai = new JButton(imagenCiudadRojo);
-		Shanghai.setBounds(1195,355, 30, 30);
+		Shanghai.setBounds(1195, 355, 30, 30);
 		add(Shanghai);
 		Shanghai.setOpaque(false);
 		Shanghai.setContentAreaFilled(false);
@@ -387,7 +438,7 @@ public class panelJuego extends JPanel implements ActionListener {
 		Shanghai.addActionListener(this);
 
 		Pekin = new JButton(imagenCiudadRojo);
-		Pekin.setBounds(1175,300, 30, 30);
+		Pekin.setBounds(1175, 300, 30, 30);
 		add(Pekin);
 		Pekin.setOpaque(false);
 		Pekin.setContentAreaFilled(false);
@@ -395,7 +446,7 @@ public class panelJuego extends JPanel implements ActionListener {
 		Pekin.addActionListener(this);
 
 		Seul = new JButton(imagenCiudadRojo);
-		Seul.setBounds(1225,297, 30, 30);
+		Seul.setBounds(1225, 297, 30, 30);
 		add(Seul);
 		Seul.setOpaque(false);
 		Seul.setContentAreaFilled(false);
@@ -403,7 +454,7 @@ public class panelJuego extends JPanel implements ActionListener {
 		Seul.addActionListener(this);
 
 		Tokio = new JButton(imagenCiudadRojo);
-		Tokio.setBounds(1280,290,30, 30);
+		Tokio.setBounds(1280, 290, 30, 30);
 		add(Tokio);
 		Tokio.setOpaque(false);
 		Tokio.setContentAreaFilled(false);
@@ -411,7 +462,7 @@ public class panelJuego extends JPanel implements ActionListener {
 		Tokio.addActionListener(this);
 
 		Osaka = new JButton(imagenCiudadRojo);
-		Osaka.setBounds(1255,320,30, 30);
+		Osaka.setBounds(1255, 320, 30, 30);
 		add(Osaka);
 		Osaka.setOpaque(false);
 		Osaka.setContentAreaFilled(false);
@@ -419,7 +470,7 @@ public class panelJuego extends JPanel implements ActionListener {
 		Osaka.addActionListener(this);
 
 		Taipei = new JButton(imagenCiudadRojo);
-		Taipei.setBounds(1205,375, 30, 30);
+		Taipei.setBounds(1205, 375, 30, 30);
 		add(Taipei);
 		Taipei.setOpaque(false);
 		Taipei.setContentAreaFilled(false);
@@ -427,7 +478,7 @@ public class panelJuego extends JPanel implements ActionListener {
 		Taipei.addActionListener(this);
 
 		HoChiMinh = new JButton(imagenCiudadRojo);
-		HoChiMinh.setBounds(1148,429, 30, 30);
+		HoChiMinh.setBounds(1148, 429, 30, 30);
 		add(HoChiMinh);
 		HoChiMinh.setOpaque(false);
 		HoChiMinh.setContentAreaFilled(false);
@@ -435,7 +486,7 @@ public class panelJuego extends JPanel implements ActionListener {
 		HoChiMinh.addActionListener(this);
 
 		Manila = new JButton(imagenCiudadRojo);
-		Manila.setBounds(1148,429, 30, 30);
+		Manila.setBounds(1148, 429, 30, 30);
 		add(Manila);
 		Manila.setOpaque(false);
 		Manila.setContentAreaFilled(false);
@@ -443,7 +494,7 @@ public class panelJuego extends JPanel implements ActionListener {
 		Manila.addActionListener(this);
 
 		Sidney = new JButton(imagenCiudadRojo);
-		Sidney.setBounds(1320,645, 30, 30);
+		Sidney.setBounds(1320, 645, 30, 30);
 		add(Sidney);
 		Sidney.setOpaque(false);
 		Sidney.setContentAreaFilled(false);
@@ -456,26 +507,6 @@ public class panelJuego extends JPanel implements ActionListener {
 		add(labelFondo);
 
 		setVisible(true);
-		
-		// Crear el JPanel para las opciones
-        opcionesPanel = new JPanel();
-        opcionesPanel.setLayout(new GridLayout(4, 1));
-        opcionesPanel.setBounds(50, 50, 200, 200);
-        
-        // Crear los botones para cada opción
-        moverseButton = new JButton("Moverse");
-        construirButton = new JButton("Construir cura");
-        tratarButton = new JButton("Tratar enfermedades");
-        pasarTurnoButton = new JButton("Pasar turno");
-
-        // Agregar los botones al JPanel de opciones
-        opcionesPanel.add(moverseButton);
-        opcionesPanel.add(construirButton);
-        opcionesPanel.add(tratarButton);
-        opcionesPanel.add(pasarTurnoButton);
-
-        // Agregar el JPanel de opciones al panel principal
-        add(opcionesPanel);
 
 	}
 
@@ -484,128 +515,247 @@ public class panelJuego extends JPanel implements ActionListener {
 		// TODO Auto-generated method stub
 
 		if (e.getSource() == sanFrancisco) {
-			
-			// Mostrar el panel de opciones
-            opcionesPanel.setVisible(true);
+
+			// explicació funcionament botó
+			Ventana_curar panel_Curar = new Ventana_curar();
+			panel_Curar.Ventana_curar();
+			sanFrancisco.add(panel_Curar);
 
 		} else if (e.getSource() == Chicago) {
-			
-			// Mostrar el panel de opciones
-            opcionesPanel.setVisible(true);
-			
-			// Ocultar el panel de opciones
-            // opcionesPanel.setVisible(false);
 
+			Ventana_curar panel_Curar = new Ventana_curar();
+			panel_Curar.Ventana_curar();
+			sanFrancisco.add(panel_Curar);
 		} else if (e.getSource() == Atlanta) {
-			
-            opcionesPanel.setVisible(true);
 
+			Ventana_curar panel_Curar = new Ventana_curar();
+			panel_Curar.Ventana_curar();
+			sanFrancisco.add(panel_Curar);
 		} else if (e.getSource() == Montreal) {
-			
-            opcionesPanel.setVisible(true);
 
+			Ventana_curar panel_Curar = new Ventana_curar();
+			panel_Curar.Ventana_curar();
+			sanFrancisco.add(panel_Curar);
 		} else if (e.getSource() == NuevaYork) {
-			
-            opcionesPanel.setVisible(true);
 
+			Ventana_curar panel_Curar = new Ventana_curar();
+			panel_Curar.Ventana_curar();
+			sanFrancisco.add(panel_Curar);
 		} else if (e.getSource() == Washington) {
-			
-            opcionesPanel.setVisible(true);
 
+			Ventana_curar panel_Curar = new Ventana_curar();
+			panel_Curar.Ventana_curar();
+			sanFrancisco.add(panel_Curar);
 		} else if (e.getSource() == Londres) {
-			
-            opcionesPanel.setVisible(true);
 
+			Ventana_curar panel_Curar = new Ventana_curar();
+			panel_Curar.Ventana_curar();
+			sanFrancisco.add(panel_Curar);
 		} else if (e.getSource() == Madrid) {
-			
-            opcionesPanel.setVisible(true);
 
+			Ventana_curar panel_Curar = new Ventana_curar();
+			panel_Curar.Ventana_curar();
+			sanFrancisco.add(panel_Curar);
 		} else if (e.getSource() == Paris) {
-			
-            opcionesPanel.setVisible(true);
 
+			Ventana_curar panel_Curar = new Ventana_curar();
+			panel_Curar.Ventana_curar();
+			sanFrancisco.add(panel_Curar);
 		} else if (e.getSource() == Essen) {
-			
-            opcionesPanel.setVisible(true);
-			
-		} else if (e.getSource() == Milan) {
-			
-            opcionesPanel.setVisible(true);
 
+			Ventana_curar panel_Curar = new Ventana_curar();
+			panel_Curar.Ventana_curar();
+			sanFrancisco.add(panel_Curar);
+		} else if (e.getSource() == Milan) {
+
+			Ventana_curar panel_Curar = new Ventana_curar();
+			panel_Curar.Ventana_curar();
+			sanFrancisco.add(panel_Curar);
 		} else if (e.getSource() == SanPetersburgo) {
 
+			Ventana_curar panel_Curar = new Ventana_curar();
+			panel_Curar.Ventana_curar();
+			sanFrancisco.add(panel_Curar);
 		} else if (e.getSource() == LosAngeles) {
 
+			Ventana_curar panel_Curar = new Ventana_curar();
+			panel_Curar.Ventana_curar();
+			sanFrancisco.add(panel_Curar);
 		} else if (e.getSource() == Miami) {
 
+			Ventana_curar panel_Curar = new Ventana_curar();
+			panel_Curar.Ventana_curar();
+			sanFrancisco.add(panel_Curar);
 		} else if (e.getSource() == MexicoDF) {
 
+			Ventana_curar panel_Curar = new Ventana_curar();
+			panel_Curar.Ventana_curar();
+			sanFrancisco.add(panel_Curar);
 		} else if (e.getSource() == Bogota) {
-			
+
+			Ventana_curar panel_Curar = new Ventana_curar();
+			panel_Curar.Ventana_curar();
+			sanFrancisco.add(panel_Curar);
 		} else if (e.getSource() == Lima) {
 
+			Ventana_curar panel_Curar = new Ventana_curar();
+			panel_Curar.Ventana_curar();
+			sanFrancisco.add(panel_Curar);
 		} else if (e.getSource() == SantiagoDeChile) {
 
+			Ventana_curar panel_Curar = new Ventana_curar();
+			panel_Curar.Ventana_curar();
+			sanFrancisco.add(panel_Curar);
 		} else if (e.getSource() == BuenosAires) {
 
+			Ventana_curar panel_Curar = new Ventana_curar();
+			panel_Curar.Ventana_curar();
+			sanFrancisco.add(panel_Curar);
 		} else if (e.getSource() == SaoPaulo) {
 
+			Ventana_curar panel_Curar = new Ventana_curar();
+			panel_Curar.Ventana_curar();
+			sanFrancisco.add(panel_Curar);
 		} else if (e.getSource() == Lagos) {
 
+			Ventana_curar panel_Curar = new Ventana_curar();
+			panel_Curar.Ventana_curar();
+			sanFrancisco.add(panel_Curar);
 		} else if (e.getSource() == Kinsasa) {
 
+			Ventana_curar panel_Curar = new Ventana_curar();
+			panel_Curar.Ventana_curar();
+			sanFrancisco.add(panel_Curar);
 		} else if (e.getSource() == Jartum) {
 
+			Ventana_curar panel_Curar = new Ventana_curar();
+			panel_Curar.Ventana_curar();
+			sanFrancisco.add(panel_Curar);
 		} else if (e.getSource() == Johannesburgo) {
 
+			Ventana_curar panel_Curar = new Ventana_curar();
+			panel_Curar.Ventana_curar();
+			sanFrancisco.add(panel_Curar);
 		} else if (e.getSource() == Argel) {
 
+			Ventana_curar panel_Curar = new Ventana_curar();
+			panel_Curar.Ventana_curar();
+			sanFrancisco.add(panel_Curar);
 		} else if (e.getSource() == ElCairo) {
 
+			Ventana_curar panel_Curar = new Ventana_curar();
+			panel_Curar.Ventana_curar();
+			sanFrancisco.add(panel_Curar);
 		} else if (e.getSource() == Riad) {
 
+			Ventana_curar panel_Curar = new Ventana_curar();
+			panel_Curar.Ventana_curar();
+			sanFrancisco.add(panel_Curar);
 		} else if (e.getSource() == Estambul) {
 
+			Ventana_curar panel_Curar = new Ventana_curar();
+			panel_Curar.Ventana_curar();
+			sanFrancisco.add(panel_Curar);
 		} else if (e.getSource() == Bagdad) {
 
+			Ventana_curar panel_Curar = new Ventana_curar();
+			panel_Curar.Ventana_curar();
+			sanFrancisco.add(panel_Curar);
 		} else if (e.getSource() == Moscu) {
 
+			Ventana_curar panel_Curar = new Ventana_curar();
+			panel_Curar.Ventana_curar();
+			sanFrancisco.add(panel_Curar);
 		} else if (e.getSource() == Teheran) {
 
+			Ventana_curar panel_Curar = new Ventana_curar();
+			panel_Curar.Ventana_curar();
+			sanFrancisco.add(panel_Curar);
 		} else if (e.getSource() == Karachi) {
 
+			Ventana_curar panel_Curar = new Ventana_curar();
+			panel_Curar.Ventana_curar();
+			sanFrancisco.add(panel_Curar);
 		} else if (e.getSource() == Bombay) {
 
+			Ventana_curar panel_Curar = new Ventana_curar();
+			panel_Curar.Ventana_curar();
+			sanFrancisco.add(panel_Curar);
 		} else if (e.getSource() == NuevaDelhi) {
 
+			Ventana_curar panel_Curar = new Ventana_curar();
+			panel_Curar.Ventana_curar();
+			sanFrancisco.add(panel_Curar);
 		} else if (e.getSource() == Calcuta) {
 
+			Ventana_curar panel_Curar = new Ventana_curar();
+			panel_Curar.Ventana_curar();
+			sanFrancisco.add(panel_Curar);
 		} else if (e.getSource() == Madras) {
 
+			Ventana_curar panel_Curar = new Ventana_curar();
+			panel_Curar.Ventana_curar();
+			sanFrancisco.add(panel_Curar);
 		} else if (e.getSource() == Yakarta) {
 
+			Ventana_curar panel_Curar = new Ventana_curar();
+			panel_Curar.Ventana_curar();
+			sanFrancisco.add(panel_Curar);
 		} else if (e.getSource() == Bangkok) {
 
+			Ventana_curar panel_Curar = new Ventana_curar();
+			panel_Curar.Ventana_curar();
+			sanFrancisco.add(panel_Curar);
 		} else if (e.getSource() == HongKong) {
 
+			Ventana_curar panel_Curar = new Ventana_curar();
+			panel_Curar.Ventana_curar();
+			sanFrancisco.add(panel_Curar);
 		} else if (e.getSource() == Shanghai) {
 
+			Ventana_curar panel_Curar = new Ventana_curar();
+			panel_Curar.Ventana_curar();
+			sanFrancisco.add(panel_Curar);
 		} else if (e.getSource() == Pekin) {
 
+			Ventana_curar panel_Curar = new Ventana_curar();
+			panel_Curar.Ventana_curar();
+			sanFrancisco.add(panel_Curar);
 		} else if (e.getSource() == Seul) {
 
+			Ventana_curar panel_Curar = new Ventana_curar();
+			panel_Curar.Ventana_curar();
+			sanFrancisco.add(panel_Curar);
 		} else if (e.getSource() == Tokio) {
 
+			Ventana_curar panel_Curar = new Ventana_curar();
+			panel_Curar.Ventana_curar();
+			sanFrancisco.add(panel_Curar);
 		} else if (e.getSource() == Osaka) {
 
+			Ventana_curar panel_Curar = new Ventana_curar();
+			panel_Curar.Ventana_curar();
+			sanFrancisco.add(panel_Curar);
 		} else if (e.getSource() == Taipei) {
 
+			Ventana_curar panel_Curar = new Ventana_curar();
+			panel_Curar.Ventana_curar();
+			sanFrancisco.add(panel_Curar);
 		} else if (e.getSource() == HoChiMinh) {
 
+			Ventana_curar panel_Curar = new Ventana_curar();
+			panel_Curar.Ventana_curar();
+			sanFrancisco.add(panel_Curar);
 		} else if (e.getSource() == Manila) {
 
+			Ventana_curar panel_Curar = new Ventana_curar();
+			panel_Curar.Ventana_curar();
+			sanFrancisco.add(panel_Curar);
 		} else if (e.getSource() == Sidney) {
 
+			Ventana_curar panel_Curar = new Ventana_curar();
+			panel_Curar.Ventana_curar();
+			sanFrancisco.add(panel_Curar);
 		}
 	}
 }

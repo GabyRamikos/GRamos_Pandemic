@@ -21,7 +21,7 @@ public class VentanaLogin extends JPanel implements ActionListener {
 		setLayout(null);
 		setPreferredSize(screenSize);
 	
-		addButton("Salir.png",810, 650);
+		addButton("Salir.png", 810, 650); // <-- Change the order of the buttons.
 		addButton("okay", 810,550);
 
 		// Crear el JLabel con el texto deseado
