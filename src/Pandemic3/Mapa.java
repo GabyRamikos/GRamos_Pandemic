@@ -13,7 +13,7 @@ import java.util.Set;
 
 
 public class Mapa {
-    private Ciudad[][] ciudades;
+    private static Ciudad[][] ciudades;
     private Map<Ciudad, Set<Ciudad>> conexiones;
     private Enfermedad[] enfermedades;
     
@@ -41,10 +41,19 @@ public class Mapa {
 	}
     
     // Constructor para obtener la ciudad actual del jugador
-    public Ciudad getCiudadEn(int x, int y) {
+    public static Ciudad getCiudadEn(int x, int y) {
         return ciudades[x][y];
     }
 
+    // Constructor para obtener la ciudad actual del jugador
+    public Ciudad getCiudadEn(int indice) {
+        int filas = ciudades.length;
+        int columnas = ciudades[0].length;
+        int x = indice % columnas;
+        int y = indice / columnas;
+        return ciudades[x][y];
+    }
+    
     // Método para el cálculo de la distancia sobre las coordenadas de cada ciudad
     private int calcularDistancia(Ciudad ciudad1, Ciudad ciudad2) {
         int dx = ciudad1.getCoordenadasX() - ciudad2.getCoordenadasX();

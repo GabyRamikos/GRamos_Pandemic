@@ -94,9 +94,9 @@ public class Jugador {
         return enfermedadActual;
     }
     
-    public void intentarCurarEnfermedad(Jugador jugador) {
-//        Ciudad ciudadActual = this.getCiudadActual();
-        Ciudad ciudadActual = Mapa.getCiudadEn(this.ubicacion % Mapa.getCiudades().length, this.ubicacion / Mapa.getCiudades().length);
+    // Método del progreso de la investigación/construcción sobre la cura
+    public void intentarCurarEnfermedad(Mapa mapa) {	
+        Ciudad ciudadActual = Mapa.getCiudadEn(this.ubicacion % mapa.getCiudades().length, this.ubicacion / mapa.getCiudades().length);
         if (ciudadActual.tieneCentroInvestigacion() && enfermedadActual.avanzarCura() < 4) {
             enfermedadActual.avanzarCura();
             System.out.println("¡Has avanzado en la cura de la enfermedad " + enfermedadActual.getNombreEnfermedad() + "!");
@@ -182,6 +182,7 @@ public class Jugador {
         return ciudades.get(random.nextInt(ciudades.size()));
     }
 
+    // Método que genera aleatoriamente una enfermedad
     public static Enfermedad elegirEnfermedadAleatoria() throws IOException {
         List<Enfermedad> enfermedades = Enfermedad.leerEnfermedades();
         Random random = new Random();
@@ -198,25 +199,25 @@ public class Jugador {
         }
     }
     
-
+    // Método de las acciones pendientes a realizar para el jugador
     public boolean realizarAccionPendiente() throws IOException {
         if (accionesPendientes.size() > 0) { // Verificamos si hay acciones pendientes
             Accion accion = accionesPendientes.get(0); // Obtenemos la primera acción de la lista de acciones pendientes
             switch (accion.getTipo()) {
                 case "mover":
-                    // Llamamos al método mover de la clase Accion pasándole la nueva ciudad como parámetro
+                    // Se llama al método mover de la clase Accion pasándole la nueva ciudad como parámetro
                     Ciudad nuevaCiudad = elegirCiudadAleatoria();
                     return accion.mover(nuevaCiudad);
                 case "tratarEnfermedad":
-                    // Llamamos al método tratarEnfermedad de la clase Accion pasándole la enfermedad como parámetro
+                    // Se llama al método tratarEnfermedad de la clase Accion pasándole la enfermedad como parámetro
                     Enfermedad enfermedad = elegirEnfermedadAleatoria();
                     return accion.tratarEnfermedad(enfermedad);
                 case "construirCentroInvestigacion":
-                    // Llamamos al método construirCentroInvestigacion de la clase Accion pasándole la ciudad actual como parámetro
+                    // Se llama al método construirCentroInvestigacion de la clase Accion pasándole la ciudad actual como parámetro
                     Ciudad ciudadActual = accion.getCiudad();
                     return accion.construirCentroInvestigacion(ciudadActual);
                 case "encontrarCura":
-                    // Llamamos al método encontrarCura de la clase Accion pasándole la enfermedad como parámetro
+                    // Se llama al método encontrarCura de la clase Accion pasándole la enfermedad como parámetro
                     Enfermedad enfermedadACurar = elegirEnfermedadAleatoria();
                     return accion.encontrarCura(enfermedadACurar);
                 default:
@@ -226,12 +227,11 @@ public class Jugador {
         return false;
     }    
     
- // Método para mover al jugador a una nueva ciudad
-    public boolean moverTotal(int nuevaUbicacionTotal, Mapa mapa) {
+    // Método para mover al jugador a una nueva ciudad
+    public boolean moverse(int nuevaUbicacionTotal, Mapa mapa) {
 		if (this.accionesAgotadas()) {
 			return false;
 		}
-    	//Mapa mapa = Mapa.getInstance();
         Ciudad ciudadActual = mapa.getCiudadEn(this.ubicacion % mapa.getCiudades().length, this.ubicacion / mapa.getCiudades().length);
         Ciudad nuevaCiudad = mapa.getCiudadEn(nuevaUbicacionTotal % mapa.getCiudades().length, nuevaUbicacionTotal / mapa.getCiudades().length);
         if (!ciudadActual.tieneConexion(nuevaCiudad)) {
@@ -244,6 +244,7 @@ public class Jugador {
     }
     
     // Creacion de subclases para las diferentes acciones
+    
     public class AccionTratar extends Accion {
 		private Enfermedad enfermedad;
 		public AccionTratar(Ciudad ciudad, Enfermedad enfermedad) {
@@ -285,7 +286,7 @@ public class Jugador {
         public AccionEncontrarCura(Ciudad ciudad, Enfermedad enfermedad) {
             super("Encontrar la cura de " + enfermedad.getNombreEnfermedad(),ciudad);
             this.enfermedad = enfermedad;
-            jugador.setEnfermedadActual(enfermedad);
+            setEnfermedadActual(enfermedad);
         }
         public boolean realizar() {
             // Implementación para encontrar cura
